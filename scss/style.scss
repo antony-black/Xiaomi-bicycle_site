@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:regular,700');
+@import '_variables';
+@import '_header';
+@import '_bike';
+@import '_info';
+@import '_characteristics';
+@import 'main-slider';
+@import '_footer';
+@import '_price';
+
+
+
+
+// ================================
+body{
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #131313;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+ul{
+  list-style: none;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.main{
+  flex: 1 1 auto;
+}
+
+.container{
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.button {
+  max-width: 420px;
+
+  &__link {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    padding: 10px;
+    background-color: $color-1;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 1.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-3;
+    transition: all .3s;
+
+    &:hover{
+      background-color: $color-2;
+    }
+  }
+}
+// =======================
+.slick-dots button{
+  font-size: 0;
+  width: 2px;
+  height: 25px;
+  background-color: $color-1;
+  transition: all .3s;
+}
+.slick-dots li + li{
+  margin-top: 10px;
+}
+.slick-active button,
+.slick-dots button:hover{
+  background-color: $color-2;
+}
+// =======================
+
